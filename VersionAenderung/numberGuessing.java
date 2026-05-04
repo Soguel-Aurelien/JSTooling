@@ -9,12 +9,16 @@ class Main {
 
         int secret = random.nextInt(100) + 1; 
         int guess = 0;
+        int guessCounter = 0;
 
         System.out.println("Guess the number (between 1 and 100) :");
 
         while (guess != secret) {
             System.out.print("Your choice : ");
             guess = scanner.nextInt();
+
+            System.out.println("Your number of Guess : ");
+            guessCounter++;
 
             if (guess < secret) {
                 System.out.println("It's bigger !");
