@@ -10,18 +10,18 @@ class Main {
         int secret = random.nextInt(100) + 1; 
         int guess = 0;
 
-        System.out.println("Devine le nombre (entre 1 et 100) :");
+        System.out.println("Guess the number (between 1 and 100) :");
 
         while (guess != secret) {
-            System.out.print("Ton choix : ");
+            System.out.print("Your choice : ");
             guess = scanner.nextInt();
 
             if (guess < secret) {
-                System.out.println("C'est plus !");
+                System.out.println("It's bigger !");
             } else if (guess > secret) {
-                System.out.println("C'est moins !");
+                System.out.println("It's lower !");
             } else {
-                System.out.println("Bravo, tu as trouvé !");
+                System.out.println("Congrates, you guessed right !");
             }
         }
 
